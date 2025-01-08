@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <meta name="description" content="Exprimez-vous sur NoteTonProf.com en donnant une note et un avis sur vos professeurs préférés.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donnez votre avis</title>
+    <link id="styleLink" href="../assets/css/default.css" rel="stylesheet">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div>
+            <a href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="Logo" loading="lazy">
+        </a>    
+        </div>
+        <div>
+            <label for="searchBar" class="invisibleLabel">Rechercher un professeur</label>
+            <input type="text" id="searchBar" placeholder="Rechercher un professeur">
+            <button id="searchButton">Rechercher</button>
+            <a href="liste_prof.html" class="button-link">Profs</a>
+        </div>
+        <button id="toggleMode">Changer de mode</button>
+    </header>
+    
+    
+    
+    <main>
+        <!-- Section principale contenant le formulaire -->
+        <div class="form-container">
+            <!-- Conteneur pour le formulaire, stylisé avec CSS -->
+            <h2>Donnez votre avis :</h2>
+            <!-- Titre du formulaire -->
+    
+            <form action="mailto:help.notetonprof@gmail.com" method="POST" enctype="text/plain">
+                <!-- Début du formulaire -->
+                <!-- `action` : Définit l'adresse email où les données seront envoyées -->
+                <!-- `method="POST"` : Envoie les données de manière sécurisée -->
+                <!-- `enctype="text/plain"` : Formate les données en texte brut pour l'email -->
+    
+                <label for="prof">Quel prof souhaitez-vous noter ?</label>
+                <!-- Label décrivant le champ pour choisir un professeur -->
+                <select id="prof" name="prof">
+                    <!-- Menu déroulant pour sélectionner un professeur -->
+                    <option>Mickael Martin Nevot</option>
+                    <option>Betari Abdelkader</option>
+                    <option>Lotfi Lakhal</option>
+                    <option>Eikichi Onizuka</option>
+                    <!-- Liste des options pour choisir le professeur -->
+                </select>
+    
+                <label for="rating">Combien d'étoiles pensez-vous qu'il mérite ?</label>
+                <!-- Label décrivant le champ pour choisir une note -->
+                <select id="rating" name="rating">
+                    <!-- Menu déroulant pour sélectionner une note -->
+                    <option value="5">5 ★</option>
+                    <!-- Option pour 5 étoiles, la valeur envoyée est "5" -->
+                    <option value="4">4 ★</option>
+                    <!-- Option pour 4 étoiles, la valeur envoyée est "4" -->
+                    <option value="3">3 ★</option>
+                    <!-- Option pour 3 étoiles -->
+                    <option value="2">2 ★</option>
+                    <!-- Option pour 2 étoiles -->
+                    <option value="1">1 ★</option>
+                    <!-- Option pour 1 étoile -->
+                </select>
+    
+                <label for="comment">Donnez un petit avis :</label>
+                <!-- Label décrivant le champ pour écrire un commentaire -->
+                <textarea id="comment" name="comment" rows="5" placeholder="Écrivez votre avis ici..."></textarea>
+                <!-- Champ de texte pour écrire un avis -->
+                <!-- `id` et `name` sont utilisés pour identifier ce champ -->
+                <!-- `rows="5"` : Définit la hauteur du champ -->
+                <!-- `placeholder` : Texte indicatif affiché à l'intérieur du champ -->
+    
+                <button type="submit">Soumettre</button>
+                <!-- Bouton pour envoyer le formulaire -->
+            </form>
+     
+        </div>
+    
+    </main>
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-section">
+            <h4>Nous contacter</h4>
+            <a href="contactez-nous.html">
+                <img src="../images/mail.png" alt="Icône email" loading="lazy">
+            </a>
+            <address class="adresse">
+                Département Informatique<br>
+                IUT d'Aix-Marseille, Campus Gaston Berger<br>
+                Rue Gaston Berger, 13625 Aix-en-Provence Cedex 1, France<br>
+            </address>
+        </div>
+        <div class="footer-buttons">
+            <a href="mentions-legales.html" class="footer-button">Mentions légales</a>
+            <a href="a-propos-de-nous.html" class="footer-button">A propos de nous</a>
+            <a href="politique-de-confidentialite.html" class="footer-button">Politique de confidentialité</a>
+            <a href="conditions-d-utilisation.html" class="footer-button">Conditions d'utilisation</a>
+        </div>
+        <div class="footer-section">
+            <h4>Suivez-nous</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/NoteTonProf">
+                    <img src="../images/facebook.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/notetonprof/">
+                    <img src="../images/insta.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://twitter.com/Note_Ton_Prof" >
+                    <img src="../images/twitter.png" alt="Twitter" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

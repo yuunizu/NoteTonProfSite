@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <meta name="description" content="Contactez-nous pour toute question ou suggestion sur NoteTonProf.com. Remplissez notre formulaire pour envoyer un message directement par email.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link id="styleLink" href="../assets/css/default.css" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div>
+            <a href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="Logo" loading="lazy">
+        </a>    
+        </div>
+        <div>
+            <label for="searchBar" class="invisibleLabel">Rechercher un professeur</label>
+            <input type="text" id="searchBar" placeholder="Rechercher un professeur">
+            <button id="searchButton">Rechercher</button>
+            <a href="liste_prof.html" class="button-link">Profs</a>
+        </div>
+        <button id="toggleMode">Changer de mode</button>
+    </header>
+    
+    
+
+    <!-- Formulaire de contact -->
+    <main>
+        <div class="form-container">
+            <h2>Contactez-nous :</h2>
+            <form action="mailto:help.notetonprof@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                <label for="email">Votre email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-section">
+            <h4>Nous contacter</h4>
+            <a href="contactez-nous.html">
+                <img src="../images/mail.png" alt="Icône email" loading="lazy">
+            </a>
+            <address class="adresse">
+                Département Informatique<br>
+                IUT d'Aix-Marseille, Campus Gaston Berger<br>
+                Rue Gaston Berger, 13625 Aix-en-Provence Cedex 1, France<br>
+            </address>
+        </div>
+        <div class="footer-buttons">
+            <a href="mentions-legales.html" class="footer-button">Mentions légales</a>
+<a href="a-propos-de-nous.html" class="footer-button">A propos de nous</a>
+<a href="politique-de-confidentialite.html" class="footer-button">Politique de confidentialité</a>
+<a href="conditions-d-utilisation.html" class="footer-button">Conditions d'utilisation</a>
+        </div>
+        <div class="footer-section">
+            <h4>Suivez-nous</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/NoteTonProf">
+                    <img src="../images/facebook.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/notetonprof/">
+                    <img src="../images/insta.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://twitter.com/Note_Ton_Prof" >
+                    <img src="../images/twitter.png" alt="Twitter" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

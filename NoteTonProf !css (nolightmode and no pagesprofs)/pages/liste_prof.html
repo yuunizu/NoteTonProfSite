@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <meta name="description" content="Découvrez tous les professeurs disponibles sur NoteTonProf.com et leurs évaluations par les élèves.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des professeurs</title>
+    <link id="styleLink" href="../assets/css/default.css" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div>
+            <a href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="Logo" loading="lazy">
+        </a>    
+        </div>
+        <div>
+            <label for="searchBar" class="invisibleLabel">Rechercher un professeur</label>
+            <input type="text" id="searchBar" placeholder="Rechercher un professeur">
+            <button id="searchButton">Rechercher</button>
+            <a href="liste_prof.html" class="button-link">Profs</a>
+        </div>
+        <button id="toggleMode">Changer de mode</button>
+    </header>
+    
+    
+    
+    
+    <!-- Liste des professeurs -->
+    <main>
+        <h1>Les professeurs</h1>
+        <div class="prof-list" id="profList">
+            <div class="prof-item">
+                <img src="../images/MickaelMartinNevot.svg" alt="Prof numéro 1" loading="lazy">
+                <div>
+                    <h3>Martin Nevot Mickael</h3>
+                    <a href="profil-MickaelMartinNevot.html" class="btn-link">Plus d'infos ici</a>
+                </div>
+                <div class="rating">★★★★★</div>
+            </div>
+
+            <div class="prof-item">
+                <img src="../images/LotfiLakhal.svg" alt="Prof numéro 2" loading="lazy">
+                <div>
+                    <h3>Lotfi Lakhal</h3>
+                    <a href="profil-LotfiLakhal.html" class="btn-link">Plus d'infos ici</a>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+
+            <div class="prof-item">
+                <img src="../images/BetariAbdelkader.svg" alt="Prof numéro 3" loading="lazy">
+                <div>
+                    <h3>Betari Abdelkader</h3>
+                    <a href="profil-BetariAbdelkader.html" class="btn-link">Plus d'infos ici</a>
+                </div>
+                <div class="rating">★★★★☆</div>
+            </div>
+            
+            <div class="prof-item">
+                <img src="../images/GTO.svg" alt="Prof numéro 4" loading="lazy">
+                <div>
+                    <h3>Eikichi Onizuka</h3>
+                    <a href="profil-EikichiOnizuka.html" class="btn-link">Plus d'infos ici</a>
+                </div>
+                <div class="rating">★☆☆☆☆</div>
+            </div>
+        </div>
+    </main>
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-section">
+            <h4>Nous contacter</h4>
+            <a href="contactez-nous.html">
+                <img src="../images/mail.png" alt="Icône email" loading="lazy">
+            </a>
+            <address class="adresse">
+                Département Informatique<br>
+                IUT d'Aix-Marseille, Campus Gaston Berger<br>
+                Rue Gaston Berger, 13625 Aix-en-Provence Cedex 1, France<br>
+            </address>
+        </div>
+        <div class="footer-buttons">
+            <a href="mentions-legales.html" class="footer-button">Mentions légales</a>
+            <a href="a-propos-de-nous.html" class="footer-button">A propos de nous</a>
+            <a href="politique-de-confidentialite.html" class="footer-button">Politique de confidentialité</a>
+            <a href="conditions-d-utilisation.html" class="footer-button">Conditions d'utilisation</a>
+        </div>
+        <div class="footer-section">
+            <h4>Suivez-nous</h4>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/NoteTonProf">
+                    <img src="../images/facebook.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/notetonprof/">
+                    <img src="../images/insta.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://twitter.com/Note_Ton_Prof">
+                    <img src="../images/twitter.png" alt="Twitter" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
